@@ -1,10 +1,9 @@
 import pytest
 import os
+from src.timer import Timer
 
 def test_exercise():
     os.chdir('src')
-
-    from timer import Timer
     timer = Timer()
 
     assert str(timer) == "00:00"
